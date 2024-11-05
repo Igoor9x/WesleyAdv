@@ -1,0 +1,147 @@
+.headerContainer{
+    width: 100%;
+    background-color: #343434;
+}
+.header{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: 0 auto;
+}
+.clientNameLogo{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Amiri";
+    display: flex;
+    gap: 8px;
+    line-height: 1;
+}
+.logoIcon{
+    width: 40px;
+    height: auto;
+}
+.nameHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menuDesktop{
+    display: flex;
+    flex-direction: column;
+    color: #B0AFAE;
+    gap: 20px;
+}
+.addressAndPhone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+.iconMenu{
+    margin-right: 10px;
+}
+.barMenu{
+    height: 16px;
+    border-right: 1px solid #ECD087;
+}
+.menuNav{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+}
+.menuNav li{
+    position: relative;
+}
+.menuNav li a{
+    text-decoration: none;
+    color: #B0AFAE;
+    transition: .4s;
+}
+.menuNav li a:hover{
+    color:#ECD087;
+}
+.diamondIcon{
+    font-size: 10px;
+}
+.menuMobileBars{
+    font-size: 24px;
+}
+.menuMobileContainer, .menuMobileBars{
+    display: none;
+    
+}
+.menuNav li {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px){
+    .header{
+        padding: 15px 50px;
+    }
+    .menuDesktop{
+        display: none;
+    }
+    .menuMobileBars{
+        display: inline;
+    }
+    .menuNav, .addressAndPhone{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .menuMobileContainer{
+        width: 100%;
+        justify-content: end;
+        background: #0000007a;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .menuMobile{
+        position: relative;
+        width: 45%;
+        background: #ECD087;
+        height: 100vh;
+        padding: 0 20px;
+    }
+    .closeMenuModal{
+        position: absolute;
+        right: 21px;
+        top: 21px;
+        font-size: 22px;
+    }
+    .menuMobile h2{
+        text-align: center;
+        margin: 14px 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid;
+        color: #343434;
+    }
+    .menuNav{
+        display: flex;
+        align-items: end;
+        gap: 12px;
+        font-size: 20px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid;
+        list-style: none;
+    }
+}
+@media (max-width: 768px){
+    .nameHeader{
+        display: none;
+    }
+    .menuMobile{
+        width: 80%;
+    }
+}
+@media (max-width: 425px){
+    .menuMobile{
+        width: 100%;
+    }
+}

@@ -1,0 +1,128 @@
+.aboutContainer{
+    background: #1D1E1F;
+}
+.aboutFirstCard{
+    width: 70vw;
+    display: flex;
+    color: #fff;
+    margin: 0 auto 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding-top: 20px;
+}
+.aboutInfo span:last-child{
+    margin-top: 20px;
+}
+.aboutFirstCard img{
+    width: auto;
+    height: 350px;
+}
+.aboutInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.aboutInfo h2{
+    font-size: 60px;
+    color: #ECD087;
+    text-transform: uppercase;
+}
+.aboutInfo span{
+    font-weight: 300;
+    font-size: calc(16px + (18 - 16) * ((100vw - 1024px) / (1440 - 1024)));
+}
+.aboutAdvCard{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.aboutAdvCard h2{
+    color: #ECD087;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Amiri";
+}
+.advContent{
+    width: 70vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 35px;
+    color: #fff;
+    font-size: calc(16px + (18 - 16) * ((100vw - 1024px) / (1440 - 1024)));
+}
+.advContent img{
+    width: auto;
+    height: 350px;
+    border-radius: 4px;
+}
+.advInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    font-weight: 300;
+    text-align: left;
+}
+.oab{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.iconBalance{
+    font-size: 22px;
+    color: #ECD087;
+}
+.advInfo button{
+    width: 65%;
+    font-weight: 700;
+    font-family: "Kanit";
+    padding: 16px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (max-width:1024px){
+    .aboutFirstCard, .advContent {
+        width: 90vw;
+    }
+    .aboutFirstCard img {
+        width: auto;
+        height: 300px;
+    }
+    .advInfo button {
+        padding: 12px 24px;
+    }
+}
+@media (max-width:768px){
+    .aboutFirstCard {
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: 0 auto 20px;
+        padding: 0;
+    }
+    .aboutInfo, .advInfo{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .aboutInfo h2{
+        font-size: calc(50px + (60 - 50) * ((100vw - 375px) / (768 - 375)));
+    }
+    .advContent{
+        width: 100%;
+        flex-direction:column;
+    }
+    .aboutAdvCard h2{
+        font-size: calc(30px + (48 - 30) * ((100vw - 375px) / (768 - 375)));
+    }
+    .advInfo button{
+        margin: 0 auto;
+    }
+}

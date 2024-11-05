@@ -1,0 +1,70 @@
+.areasContainer{
+    background: #1d1e1f;
+    background-image: url("../assets/bg.png");
+    background-size: cover;
+    background-position: center;
+}
+.areasContainer h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Amiri";
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #353544;
+}
+.firstArea, .secondArea{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 25px;
+    width: 100%;
+    justify-content: center;
+}
+.secondArea{
+    padding-bottom: 50px;
+}
+.areaCard{
+    position: relative;
+    min-width: 30%;
+    height: 200px;
+    background-color: #000;
+    border-radius: 8px;
+    margin-top: 25px;
+    
+}
+.areaCard span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Kanit";
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1;
+    font-size: 22px;
+    pointer-events: none;
+}
+.ImageCardArea{
+    width: 100%;
+    height: 200px;
+    filter: grayscale(100%);
+    opacity: 50%;
+    transition: .5s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.ImageCardArea:hover{
+    filter: grayscale(0%);
+    opacity: 70%;
+}
+@media (max-width:768px){
+    .firstArea, .secondArea{
+        padding: 0 20px;  
+    }
+    .secondArea{
+        padding: 0 20px 80px 20px;        
+    }
+    .areasContainer h2{
+        font-size: calc(32px + (48 - 32) * ((100vw - 375px) / (768 - 375)));
+    }
+}

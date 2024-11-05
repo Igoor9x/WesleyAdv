@@ -1,0 +1,84 @@
+.footerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 40px;
+    background: #343434;
+}
+.footerLogo{
+    width: 22vw;
+    text-align: center;
+}
+.footerLogo img{
+    width: 60px;
+    height: auto;
+}
+.footerContent{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    gap: 10%;
+}
+.footerContent h2{
+    text-transform:  uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+.footerContent span{
+    font-size: 14px;
+    font-weight: 300;
+}
+.areasFooter, .contactFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+}
+.areasFooter{
+    pointer-events: none;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:  .5s;
+}
+.contact:hover{
+    color: #ECD087;
+}
+@media (max-width:768px){
+    .footerContainer{
+        flex-direction: column;
+    }
+    .footerLogo{
+        margin-bottom: 20px;
+    }
+    .footerLogo img {
+        margin-top: 20px;
+        width: 80px;
+    }
+    .footerContent{
+        width: 80%;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        gap: 0;
+    }
+    .footerContainer h2{
+        font-size: 30px;
+    }
+    .footerContent span{
+
+        font-size: 16px;
+    }
+    .areasFooter, .contactFooter{
+        align-items: center;
+    }
+    .areasFooter{
+        padding-bottom: 12px;
+        border-bottom: 2px solid;
+    }
+}

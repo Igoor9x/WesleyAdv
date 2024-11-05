@@ -1,0 +1,79 @@
+.reviewsContainer{
+    background-color: #ECD087;
+    text-align: center;
+    padding: 50px 0;
+}
+.titleSection{
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1;
+}
+.titleSection h2{
+    font-family: "Amiri";
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #30303D;
+}
+.titleSection span{
+    font-weight: 300;
+    color: #5B5B5B;
+}
+.reviews{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    gap: 5%;
+    padding: 0 60px;
+    justify-content: center;
+}
+.reviewCard{
+    width: 30vw;
+    padding: 30px;
+    background: #EDE0BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.perfilReview{
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.nameReview{
+    padding:0 10px 10px 10px;
+    border-bottom: 1px solid #5B5B5B;
+    font-size: 24px;
+    font-weight: bold;
+}
+.reviewText{
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.starsReview{
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width:768px){
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .reviewCard {
+        width: 90vw;
+    }
+    .titleSection{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .titleSection h2{
+        font-size: 46px;
+    }
+    .titleSection span{
+        font-size: calc(12px + (16 - 12) * ((100vw - 375px) / (768 - 375)));
+    }
+}
